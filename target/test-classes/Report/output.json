@@ -1,0 +1,70 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Verifying the login details with valid credentials",
+        "description": "",
+        "id": "verifying-the-adactin-login-details;verifying-the-login-details-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16163701700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the Adactin page",
+            "match": {
+              "location": "StepDefinition.user_is_on_the_Adactin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.sendKeys(Unknown Source)\r\n\tat org.test.BaseClass.enterText(BaseClass.java:75)\r\n\tat org.test.LoginPages.launch(LoginPages.java:34)\r\n\tat org.stepdefi.StepDefinition.user_try_to_login_and(StepDefinition.java:24)\r\n\tat ✽.User try to login \"Milton19\" and \"L837GC\"(C:/Users/user/eclipse-workspace/SampleCucumber/src/test/resources/features/login.feature:5)\r\n",
+              "duration": 76999100,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User try to login \"Milton19\" and \"L837GC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Milton19\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"L837GC\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.user_try_to_login_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8500,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User should verify success messsage",
+            "match": {
+              "location": "StepDefinition.user_should_verify_success_messsage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "verifying the Adactin login details",
+    "description": "",
+    "id": "verifying-the-adactin-login-details",
+    "keyword": "Feature",
+    "uri": "C:/Users/user/eclipse-workspace/SampleCucumber/src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
